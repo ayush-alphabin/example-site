@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agency Name - Home</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Optionally include a Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <nav class="navbar">
+            <h1 class="logo">YourAgencyName</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Mobile menu toggle (visible on smaller screens) -->
+            <div class="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h2 class="hero-title">Building Your Brand Presence</h2>
+            <p class="hero-tagline">We are a full-service agency helping you succeed online.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We are a creative agency with over 10 years of experience in delivering top-notch marketing and design
+            solutions. Our team is passionate about crafting strategies that help your business grow and stand out.</p>
+        <p>From brand development to digital marketing, we pride ourselves on our collaborative approach and innovative
+            thinking. We believe in building lasting partnerships with our clients through transparency and
+            results-driven work.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Web Design</h3>
+                <p>Modern and responsive web design to build your online presence.</p>
+            </div>
+            <div class="service-item">
+                <h3>Digital Marketing</h3>
+                <p>Targeted marketing campaigns to increase your reach and engagement.</p>
+            </div>
+            <div class="service-item">
+                <h3>Brand Strategy</h3>
+                <p>Comprehensive branding and strategy development for your business.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-gallery">
+            <div class="project-item">
+                <img src="project1.jpg" alt="Project 1 screenshot" />
+                <h4>Project One</h4>
+                <p class="project-desc">Description of Project One or the client name.</p>
+            </div>
+            <div class="project-item">
+                <img src="project2.jpg" alt="Project 2 screenshot" />
+                <h4>Project Two</h4>
+                <p class="project-desc">Brief info about Project Two showcasing what was done.</p>
+            </div>
+            <div class="project-item">
+                <img src="project3.jpg" alt="Project 3 screenshot" />
+                <h4>Project Three</h4>
+                <p class="project-desc">Short description or results of Project Three.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to work together? Send us a message below!</p>
+        <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p><strong>Email:</strong> contact@youragency.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Address:</strong> 123 Agency St., City, Country</p>
+        </div>
+        <div class="social-links">
+            <a href="https://facebook.com/youragency" target="_blank">Facebook</a> |
+            <a href="https://twitter.com/youragency" target="_blank">Twitter</a> |
+            <a href="https://linkedin.com/company/youragency" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Include JavaScript for mobile menu toggle (optional) -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+/* Basic Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #111;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+/* Navigation and Hero Section */
+.hero-section {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Mobile Menu Toggle - hidden on desktop */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Hero Content */
+.hero-content {
+    margin-top: 120px;
+}
+
+.hero-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-tagline {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #0066cc;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #004999;
+}
+
+/* About Section */
+.about-section {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Services Section */
+.services-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    margin-bottom: 40px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex: 1 1 200px;
+    background: #f1f1f1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 0.95em;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    margin-bottom: 40px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    flex: 1 1 250px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.project-item h4 {
+    margin: 10px 0 5px;
+}
+
+.project-desc {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #004999;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #0066cc;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .nav-links.active li {
+        margin: 10px 0;
+    }
+
+    .hero-section {
+        padding: 80px 20px;
+    }
+
+    .hero-title {
+        font-size: 2em;
+    }
+
+    .services-list,
+    .portfolio-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item,
+    .project-item {
+        width: 100%;
+    }
+}
